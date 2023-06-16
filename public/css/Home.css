@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Open+Sans:wght@500&family=Poppins&family=Roboto:wght@500&display=swap');
+body{
+    font-family: Poppins;
+}
+.logo {
+  display: inline-block;
+  margin-right: 10px; /* Adjust margin as needed */
+}
+
+.logo img {
+  width: 90px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+nav h1{
+    font-family: Roboto;
+    margin-left: 50px;
+    font-size: 28px;
+}
+.color{
+    color: #0083FF;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    
+}
+li{
+    padding-left: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  color: #0083FF;
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block;
+  transition: 0.9s;
+}
+.nav-item{
+  list-style: none;
+  text-decoration: none;
+}
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+ 
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #5CD2C6;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.parent{
+    display: flex;
+}
+.btn {
+    width: 6.5em;
+    height: 2.3em;
+    margin: 0.5em;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+   }
+   
+   button:hover {
+    color: black;
+   }
+   
+   nav button:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+   }
+   
+   button:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+   }
+nav a{
+  color: inherit;
+  text-decoration: none;
+}
+/*section*/
+.parent{
+    display: flex;
+}
+a .btn {
+    width: 6.5em;
+    height: 2.3em;
+    margin: 0.5em;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+   }
+   
+   a button:hover {
+    color: black;
+   }
+   
+  a button:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+   }
+   
+   a button:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+   }
+nav img{
+    width: 50px;
+}
+.section{
+    margin-left: 130px;
+    margin-top: 80px;
+    width: 45%;
+}
+.title{
+    font-size: 44px;
+    color: #081131;
+}
+.section button {
+    padding: 17px 40px;
+    border-radius: 50px;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .5s ease;
+   }
+   
+   .section button:hover {
+    letter-spacing: 3px;
+    background-color: #0083FF;
+    color: hsl(0, 0%, 100%);
+    box-shadow: #0083FF;
+    cursor: pointer;
+   }
+   
+   .section button:active {
+    letter-spacing: 3px;
+    background-color: #0083FF;
+    color: hsl(0, 0%, 100%);
+    box-shadow: #0083FF;
+    
+    transition: 100ms;
+   }
+   .section .btn2 {
+    padding: 17px 40px;
+    border-radius: 50px;
+    border: 0;
+    background-color:#0083FF;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .5s ease;
+    color: white;
+   }
+   
+  .section .btn2:hover {
+    letter-spacing: 3px;
+    background-color: white;
+    color: black;
+    box-shadow: white
+   }
+   
+   .section .btn2:active {
+    letter-spacing: 3px;
+    background-color: white;
+    color: black;
+    box-shadow: white;
+    
+    transition: 100ms;
+   }
+   .aspect-ratio-9-16 {
+    position: relative;
+    width: 25vw; /* adjust to desired width */
+    height: 40.74vw; /* 9 / 16 * 80vw */
+    max-width: 400px; /* add a maximum width to limit the size */
+    margin: 0 auto; /* center the div horizontally */
+     /* add a border */
+    border-radius: 20px; /* add a rounded edge effect */
+  }
+  
+  .aspect-ratio-9-16 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 18px; /* make the image fit the rounded edge effect */
+  }
+  /*section2*/
+  .cardparent {
+    margin-top: 200px;
+  }
+  
+  .cardparent h1 {
+    margin-left: 500px;
+    font-family: Open sans;
+  }
+  
+  .childcard {
+    display: flex;
+  }
+  
+  .card {
+    position: relative;
+    background: #fff;
+    width: 200px;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: auto;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+  }
+  
+  .image {
+    width: 100%;
+    height: 200px;
+  }
+  
+  .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .text {
+    padding: 5px;
+  }
+  
+  .product-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 1px;
+  }
+  
+  .price {
+    font-size: 16px;
+    color: #888;
+  }
+  
+  .add-to-cart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: rgba(244, 67, 54, 0.8);
+    z-index: 1;
+  }
+  
+  .add-to-cart img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    pointer-events: none;
+  }
+  
+  .card a.add-to-cart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+
+  .btns {
+    --color: #00A97F;
+    --color2: rgb(10, 25, 30);
+    padding: 0.8em 1.75em;
+    background-color: transparent;
+    border-radius: 6px;
+    border: .3px solid var(--color);
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 17px;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
+   }
+   
+   .btns::after, .btns::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+   }
+   
+   .btns::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .btns:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .btns:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+   }
+   
+   .btns:hover {
+    color: var(--color2);
+   }
+   
+   .btns:active {
+    filter: brightness(.7);
+    transform: scale(.98);
+   }
+  
